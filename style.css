@@ -1213,21 +1213,6 @@ h3 {
   opacity: 1;
 }
 
-.featured-glow {
-  background: linear-gradient(135deg, rgba(217, 164, 65, 0.4), rgba(255, 140, 66, 0.3)) !important;
-  opacity: 0.6 !important;
-  animation: featuredGlowPulse 3s ease-in-out infinite alternate;
-}
-
-@keyframes featuredGlowPulse {
-  0% {
-    opacity: 0.4;
-  }
-
-  100% {
-    opacity: 0.9;
-  }
-}
 
 /* Shimmer sweep effect */
 .card-shimmer {
@@ -1261,33 +1246,6 @@ h3 {
   border-color: rgba(217, 164, 65, 0.35);
 }
 
-/* ---- FEATURED CARD ---- */
-.featured-card {
-  background: rgba(255, 255, 255, 0.7);
-  border-color: rgba(217, 164, 65, 0.35);
-  animation: featuredFloat 5s ease-in-out infinite;
-  box-shadow:
-    0 12px 32px rgba(217, 164, 65, 0.18),
-    0 4px 12px rgba(0, 0, 0, 0.05),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.95);
-}
-
-@keyframes featuredFloat {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-.featured-card:hover {
-  transform: translateY(-16px) scale(1.02);
-  animation: none;
-}
 
 .featured-badge {
   display: inline-flex;
