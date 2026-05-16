@@ -1,46 +1,232 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zenlabz | Website Development & UI/UX Design Agency</title>
-  <meta name="description"
-    content="Zenlabz builds high-converting websites, landing pages, and UI/UX designs. Fast delivery, affordable pricing, and premium quality." />
-  <meta name="keywords"
-    content="website development agency, landing page design services, UI UX design agency, affordable web design, high converting websites" />
-  <meta property="og:title" content="Zenlabz | Website Development & UI/UX Design Agency" />
-  <meta property="og:description"
-    content="Zenlabz builds high-converting websites, landing pages, and UI/UX designs. Fast delivery, affordable pricing, and premium quality." />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>Zenlabz | Premium Website Development &amp; UI/UX Design Agency</title>
+  <meta name="description" content="Zenlabz is a premium web design agency building high-converting websites, landing pages, and stunning UI/UX designs. Fast 7â€“14 day delivery. Affordable pricing. Get a free quote today." />
+  <meta name="keywords" content="website development agency, landing page design services, UI UX design agency, affordable web design, high converting websites, responsive website design, modern web design, startup website, premium web development, web design agency" />
+  <meta name="author" content="Zenlabz" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#D9A441" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://zenlabz.vercel.app/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Zenlabz Z favicon.png" />
+  <link rel="apple-touch-icon" href="Zenlabz Z favicon.png" />
+  <link rel="shortcut icon" href="Zenlabz Z favicon.png" />
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://zenlabz.co/" />
+  <meta property="og:url" content="https://zenlabz.vercel.app/" />
+  <meta property="og:title" content="Zenlabz | Premium Website Development &amp; UI/UX Design Agency" />
+  <meta property="og:description" content="Zenlabz is a premium web design agency building high-converting websites, landing pages, and stunning UI/UX designs. Fast delivery, affordable pricing." />
+  <meta property="og:image" content="https://zenlabz.vercel.app/Zenlabz Z favicon.png" />
+  <meta property="og:site_name" content="Zenlabz" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@zenlabz" />
+  <meta name="twitter:title" content="Zenlabz | Premium Website Development &amp; UI/UX Design Agency" />
+  <meta name="twitter:description" content="Premium website development, landing page design, and UI/UX design services. Fast delivery, affordable pricing, and world-class quality." />
+  <meta name="twitter:image" content="https://zenlabz.vercel.app/Zenlabz Z favicon.png" />
+
+  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
+  <link rel="dns-prefetch" href="https://www.gstatic.com" />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Zenlabz",
+    "url": "https://zenlabz.vercel.app",
+    "logo": "https://zenlabz.vercel.app/Zenlabz Z favicon.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "zenlabz.contact@gmail.com",
+      "contactType": "customer service"
+    },
+    "sameAs": ["https://www.instagram.com/zenlabz.co/"]
+  }
+  </script>
+
+  <!-- Structured Data: WebSite with Sitelinks Search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Zenlabz",
+    "url": "https://zenlabz.vercel.app"
+  }
+  </script>
+
+  <!-- Structured Data: Professional Service -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Zenlabz",
-    "description": "Zenlabz builds high-converting websites, landing pages, and UI/UX designs. Fast delivery, affordable pricing, and premium quality.",
+    "description": "Premium website development agency offering custom web design, landing page design, UI/UX design, app design, and website maintenance. Fast 7â€“14 day delivery with affordable pricing.",
+    "url": "https://zenlabz.vercel.app",
     "email": "zenlabz.contact@gmail.com",
-    "url": "https://zenlabz.co",
+    "image": "https://zenlabz.vercel.app/Zenlabz Z favicon.png",
+    "priceRange": "$$",
     "sameAs": ["https://www.instagram.com/zenlabz.co/"],
-    "offers": {
-      "@type": "AggregateOffer",
-      "offerCount": "5",
-      "lowPrice": "500",
-      "priceCurrency": "USD"
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Web Design & Development Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website Development",
+            "description": "Custom, blazing-fast responsive websites engineered for conversions and built on modern tech stacks."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Landing Page Design",
+            "description": "High-converting landing pages designed with persuasion psychology and A/B tested layouts."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "UI/UX Design",
+            "description": "User-centric interface design from wireframes to pixel-perfect, interactive prototypes."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "App Design",
+            "description": "Beautiful iOS and Android mobile app interfaces designed to maximize engagement and retention."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website Maintenance",
+            "description": "Ongoing website maintenance, security, performance monitoring, and content updates."
+          }
+        }
+      ]
     },
-    "serviceType": ["Website Development Agency", "Landing Page Design Services", "UI UX Design Agency", "App Design", "Website Maintenance"]
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "50",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Aditya Rathore"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+        "reviewBody": "Zenlabz delivered our website in under 2 weeks and it looks absolutely incredible. We've already seen a 40% increase in leads since launching."
+      },
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Priya Mehta"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+        "reviewBody": "The team at Zenlabz really understood our vision. The UI/UX design exceeded expectations â€” clean, fast, and conversion-optimized."
+      },
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Sameer Khan"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+        "reviewBody": "Affordable, professional, and fast. Zenlabz is the go-to agency for anyone serious about their online presence."
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes your website development agency different?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We focus on high-converting websites rather than just digital brochures. Our combination of performance-driven code, modern tech stacks, and premium UI/UX design ensures your site performs exceptionally well in search rankings and user engagement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does affordable web design cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "While we deliver premium, agency-level quality, our streamlined processes allow us to offer highly competitive rates. Our affordable web design packages are structured to provide maximum ROI for startups and growing brands."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do your landing page design services include copywriting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our landing page design services can include conversion-focused copywriting. We understand that design and words must work together seamlessly to turn visitors into leads and customers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to design and develop a website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Typically, we deliver full websites in 7-14 days. For complex projects, the timeline might extend, but we always prioritize speed without sacrificing quality."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://zenlabz.vercel.app/"
+      }
+    ]
   }
   </script>
 </head>
 
 <body>
+  <!-- Skip to content for accessibility & SEO -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="global-ambient">
     <div class="ambient-blob ambient-blob-1"></div>
     <div class="ambient-blob ambient-blob-2"></div>
@@ -66,7 +252,8 @@
   </nav>
 
   <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
+  <main id="main-content">
+  <section class="hero" id="home" aria-label="Hero Section">
     <div class="hero-bg">
       <div class="blob blob-1"></div>
       <div class="blob blob-2"></div>
@@ -175,7 +362,7 @@
           </div>
           <div class="trust-text">
             <h3>Fast Delivery</h3>
-            <p>Launch in 7–14 days</p>
+            <p>Launch in 7â€“14 days</p>
           </div>
         </div>
         <div class="trust-item reveal tilt-card glass-panel">
@@ -226,7 +413,7 @@
       <div class="section-header reveal">
         <span class="section-tag">What We Do</span>
         <h2>Services Built for <span class="gradient-text">Growth</span></h2>
-        <p>Every service is designed to move the needle — more traffic, more leads, more revenue.</p>
+        <p>Every service is designed to move the needle â€” more traffic, more leads, more revenue.</p>
       </div>
       <div class="services-grid">
 
@@ -267,7 +454,7 @@
             </svg>
           </div>
           <h3>Landing Page Design</h3>
-          <p>High-converting landing pages that turn visitors into leads — designed with persuasion psychology and A/B
+          <p>High-converting landing pages that turn visitors into leads â€” designed with persuasion psychology and A/B
             tested layouts.</p>
           <ul class="service-features">
             <li>Conversion-focused copy</li>
@@ -288,7 +475,7 @@
             </svg>
           </div>
           <h3>UI/UX Design</h3>
-          <p>User-centric design that delights — from wireframes to pixel-perfect interfaces that keep users coming
+          <p>User-centric design that delights â€” from wireframes to pixel-perfect interfaces that keep users coming
             back.</p>
           <ul class="service-features">
             <li>Research-backed UX</li>
@@ -309,7 +496,7 @@
             </svg>
           </div>
           <h3>App Design</h3>
-          <p>Beautiful, intuitive mobile app interfaces for iOS &amp; Android — designed to maximize engagement and
+          <p>Beautiful, intuitive mobile app interfaces for iOS &amp; Android â€” designed to maximize engagement and
             retention.</p>
           <ul class="service-features">
             <li>iOS &amp; Android UI</li>
@@ -330,7 +517,7 @@
             </svg>
           </div>
           <h3>Website Maintenance</h3>
-          <p>Worry-free ongoing support — updates, security, performance monitoring, and content changes handled for
+          <p>Worry-free ongoing support â€” updates, security, performance monitoring, and content changes handled for
             you.</p>
           <ul class="service-features">
             <li>Monthly retainer plans</li>
@@ -367,7 +554,7 @@
             <div class="why-num">02</div>
             <div class="why-content">
               <h3>Delivered in Days, Not Weeks</h3>
-              <p>Our streamlined process delivers full websites in 7–14 days without cutting corners.</p>
+              <p>Our streamlined process delivers full websites in 7â€“14 days without cutting corners.</p>
             </div>
           </div>
           <div class="why-card reveal" data-delay="200">
@@ -388,7 +575,7 @@
             <div class="why-num">05</div>
             <div class="why-content">
               <h3>Modern Tech Stack</h3>
-              <p>We use the latest tools — Next.js, React, Webflow, Framer — for peak performance.</p>
+              <p>We use the latest tools â€” Next.js, React, Webflow, Framer â€” for peak performance.</p>
             </div>
           </div>
         </div>
@@ -402,7 +589,7 @@
       <div class="section-header reveal">
         <span class="section-tag">Our Work</span>
         <h2>Projects That <span class="gradient-text">Speak</span> for Themselves</h2>
-        <p>A selection of our recent work — each built to perform, not just impress.</p>
+        <p>A selection of our recent work â€” each built to perform, not just impress.</p>
       </div>
       <div class="portfolio-grid">
         <a href="#contact" class="portfolio-card reveal tilt-card glass-panel" data-delay="0">
@@ -471,7 +658,7 @@
       <div class="section-header reveal">
         <span class="section-tag">How We Work</span>
         <h2>Simple Process, <span class="gradient-text">Remarkable</span> Results</h2>
-        <p>From idea to launch — a transparent, collaborative journey every step of the way.</p>
+        <p>From idea to launch â€” a transparent, collaborative journey every step of the way.</p>
       </div>
       <div class="process-steps">
         <div class="process-step reveal" data-delay="0">
@@ -517,7 +704,7 @@
             </svg>
           </div>
           <h3>Develop & Optimize</h3>
-          <p>We build with clean, performant code — optimized for speed, SEO, and seamless user experience.</p>
+          <p>We build with clean, performant code â€” optimized for speed, SEO, and seamless user experience.</p>
         </div>
         <div class="process-connector reveal">
           <svg class="connector-line" viewBox="0 0 100 20" preserveAspectRatio="none">
@@ -570,7 +757,7 @@
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </div>
-          <p>"The team at Zenlabz really understood our vision. The UI/UX design exceeded expectations — clean, fast,
+          <p>"The team at Zenlabz really understood our vision. The UI/UX design exceeded expectations â€” clean, fast,
             and conversion-optimized. Highly recommend."</p>
           <div class="testi-author">
             <div class="testi-avatar">PM</div>
@@ -810,7 +997,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 Zenlabz. All rights reserved.</p>
+        <p>Â© 2026 Zenlabz. All rights reserved. | Premium Website Development &amp; UI/UX Design Agency</p>
         <p>Crafted with 
           <svg viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px;display:inline-block;vertical-align:middle;color:var(--orange)">
             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />

@@ -22,7 +22,39 @@ body {
 
 img {
   max-width: 100%;
-  display: block
+  display: block;
+  height: auto
+}
+
+/* ===== ACCESSIBILITY & PERFORMANCE ===== */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 16px;
+  background: var(--charcoal);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 0 0 8px 8px;
+  font-size: .875rem;
+  z-index: 9999;
+  transition: top 0.3s
+}
+
+.skip-link:focus {
+  top: 0
+}
+
+/* Prevent CLS: portfolio images */
+.portfolio-img-wrap {
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden
 }
 
 a {
