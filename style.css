@@ -47,9 +47,78 @@ ul {
   --shadow-lg: 0 12px 48px rgba(43, 43, 43, .12);
   --radius: 16px;
   --radius-sm: 10px;
-  --transition: all .3s ease;
-  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition: all .35s var(--ease-premium);
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+  --glow-gold: 0 0 20px rgba(217, 164, 65, 0.3);
+  --glow-white: 0 0 20px rgba(255, 255, 255, 0.5);
 }
+
+/* ===== PREMIUM ICON SYSTEM ===== */
+.premium-icon-box {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.05),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+  transition: var(--transition);
+  color: var(--gold);
+}
+
+.premium-icon-box svg {
+  width: 28px;
+  height: 28px;
+  stroke-width: 1.5;
+  transition: var(--transition);
+}
+
+.premium-icon-box:hover {
+  transform: translateY(-8px) rotate(3deg);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--gold-light);
+  box-shadow: 
+    0 20px 40px rgba(217, 164, 65, 0.15),
+    var(--glow-gold);
+  color: var(--orange);
+}
+
+.premium-icon-box:hover svg {
+  transform: scale(1.1);
+}
+
+/* Floating Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(217, 164, 65, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(217, 164, 65, 0.4); }
+}
+
+.float-anim { animation: float 6s ease-in-out infinite; }
+.float-slow { animation: float-slow 8s ease-in-out infinite; }
+.pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
+
+/* Icon specific colors */
+.icon-gold { color: var(--gold); }
+.icon-orange { color: var(--orange); }
+.icon-blue { color: #3b82f6; }
+.icon-purple { color: #8b5cf6; }
 
 /* ===== TYPOGRAPHY ===== */
 h1,
@@ -136,22 +205,6 @@ h3 {
 .stagger-text.visible .word {
   opacity: 1;
   transform: translateY(0);
-}
-
-.float-anim {
-  animation: floatCard 6s ease-in-out infinite;
-}
-
-@keyframes floatCard {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
 }
 
 /* Global Ambient Light & Grid */
@@ -359,6 +412,35 @@ h3 {
   font-size: 1rem
 }
 
+.step-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  color: var(--gold);
+}
+
+.step-icon svg {
+  width: 40px;
+  height: 40px;
+  stroke-width: 1.5;
+}
+
+.process-step:hover .step-icon {
+  transform: translateY(-8px) scale(1.05);
+  background: #fff;
+  border-color: var(--gold-light);
+  box-shadow: var(--glow-gold);
+}
+
 .btn-white:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, .15)
@@ -385,12 +467,20 @@ h3 {
 }
 
 .btn-arrow {
-  transition: transform .2s
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
 }
 
-.btn-primary:hover .btn-arrow,
-.btn-white:hover .btn-arrow {
-  transform: translateX(4px)
+.btn-arrow svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.5;
+}
+
+.btn-primary:hover .btn-arrow {
+  transform: translateX(5px);
 }
 
 /* ===== REVEAL ANIMATIONS ===== */
@@ -1230,8 +1320,10 @@ h3 {
 }
 
 .trust-icon {
-  font-size: 2rem;
-  flex-shrink: 0
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .trust-text h3 {
@@ -1577,6 +1669,18 @@ h3 {
 .why-left h2 {
   margin: 8px 0 16px;
   line-height: 1.2
+}
+
+.testi-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+
+.testi-stars svg {
+  width: 18px;
+  height: 18px;
 }
 
 .why-left p {
@@ -2557,4 +2661,29 @@ h3 {
   .hero-stats {
     padding: 0 10px;
   }
+}
+
+/* ===== PROCESS STEP ICONS ===== */
+.step-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+}
+
+.step-icon svg,
+.step-emoji {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(217, 164, 65, 0.2));
+}
+
+.step-emoji {
+  width: 68px;
+  height: 68px;
+  animation: none;
 }
