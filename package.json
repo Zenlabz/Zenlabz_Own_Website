@@ -1,6 +1,18 @@
 {
+  "name": "zenlabz-own-website",
+  "version": "1.0.0",
+  "description": "Zenlabz Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "firebase": "^12.13.0"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
   }
 }
